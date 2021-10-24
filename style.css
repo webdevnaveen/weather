@@ -1,0 +1,59 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #2626; */
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(https://source.unsplash.com/1600x900/?weather) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.76);
+    color: whitesmoke;
+    padding: 32px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 450px;
+    margin: 1em;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button#s-btn {
+    margin: 10px;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    border: none;
+    background-color: #9494942b;
+    color: whitesmoke;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+button#s-btn:hover{
+    background-color:rgba(26, 26, 26, 0.794);
+}
+input#search-bar {
+    padding: 10px 20px;
+    border-radius: 23px;
+    outline: none;
+    border: none;
+    background-color: #7c7c7c2b;
+    color: whitesmoke;
+    font-size: 1.4em;
+    text-transform: capitalize;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.description, .humidity, .wind{
+    margin: 5px;
+    text-transform: capitalize;
+}
